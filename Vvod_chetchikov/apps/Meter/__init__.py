@@ -1,0 +1,1 @@
+default_app_config = 'Vvod_chetchikov.apps.Meter.apps.MeterConfig'
