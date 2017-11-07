@@ -20,4 +20,5 @@ def index (request):
     }
     return render(request, 'index.html', context)
 
-def data__meter(self, index):
+
+#def data__meter(self, index):
