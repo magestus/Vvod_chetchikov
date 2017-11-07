@@ -5,13 +5,14 @@ from Vvod_chetchikov.apps.Meter.models import Meter
 from Vvod_chetchikov.apps.data_meter.forms import data_meterform
 
 
+
 # Create your views here.
 
 def index(request):
     meters = Meter.objects.all()
 
     form = data_meterform(initial={
-        "type_meter": Meter.objects
+        "type_meter": Meter.type_meter
         })
 
     context = {
