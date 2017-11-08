@@ -11,9 +11,11 @@ from Vvod_chetchikov.apps.data_meter.forms import data_meterform
 def index(request):
     meters = Meter.objects.all()
 
+
     form = data_meterform(initial={
-        "type_meter": Meter.type_meter
-        })
+        "type_meter": meters[0]
+            #Meter.type_meter
+    })
 
     context = {
         'meters': meters,

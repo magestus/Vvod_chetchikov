@@ -23,17 +23,17 @@
             <br><h2 class="text-center">Ввод показаний счётчиков</h2><br>
                 <div class='col-md-12 ' style='border: solid 1px #24c86c;'>
                     {% for meter in meters %}
-                        <div class="col-md-3">
-
+                            <div class="col-md-3">
     {#                            <div class='col-xs-6 col-md-12'>#}
                                     <h3>{{ meter.type_meter }}</h3>
                                     <hr>
+{#                                    {% for  %}#}
                                     <form action="" method="post" >
                                         {{ form.as_p }}
                                     </form>
     {#                            </div>#}
+                            </div>
 
-                        </div>
                     {% endfor %}
                 </div>
         </div>
